@@ -1,7 +1,11 @@
 <!--index.wxml-->
 <view>hello {{name}}</view>
 <view>{{counter}}</view>
-<view id="btn-group">
-  <button id="sub" size="mini" bindtap="changeCounter">--</button>
-  <button id="add" size="mini" bindtap="changeCounter">++</button>
+<view id="btn-group" catchtap="changeCounter">
+  <button id="sub" size="mini">--</button>
+  <button id="add" size="mini">++</button>
+</view>
+<view>{{person.id}}---{{person.name}}---{{person.age}}</view>
+<view wx:for="{{provider}}" wx:key="index">
+  <view>{{index}}--{{item.name}}</view>
 </view>
