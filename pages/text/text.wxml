@@ -4,3 +4,13 @@
 
 <!-- selectable属性设置文本是否可以被选中，可以直接使用属性selectable，可以不赋值 -->
 <text selectable="{{true}}">我是可以被选中的</text>
+
+<view>
+  <text space="nbsp">hello world\n</text>
+  <text space="ensp">hello world\n</text>
+  <text space="emsp">hello world\n</text>
+</view>
+
+<view>
+  <text decode> 5 &gt; 3</text>
+</view>
