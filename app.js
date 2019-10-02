@@ -53,6 +53,6 @@ App({
     // })
   },
   globalData: {
-    userInfo: null
+    userInfo: "hello"
   }
 })

@@ -1,5 +1,10 @@
 //index.js
 
+const app = getApp();
+const userinfo = app.globalData.userInfo;
+console.log(app.globalData.userInfo);
+console.log(app);
+
 Page({
   data:{
     name:"你好",
