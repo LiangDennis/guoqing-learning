@@ -1,0 +1,6 @@
+<!--pages/text/text.wxml-->
+<text>hello world\n</text>
+<text>你好，中国\n</text>
+
+<!-- selectable属性设置文本是否可以被选中，可以直接使用属性selectable，可以不赋值 -->
+<text selectable="{{true}}">我是可以被选中的</text>

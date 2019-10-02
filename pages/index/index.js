@@ -39,5 +39,14 @@ Page({
   },
   getInfoMations(event) {
     console.log(event);
-  }
+  },
+  // onPageScroll(obj) {
+  //   console.log(obj)
+  // },
+  // onPullDownRefresh() {
+  //   console.log("被刷新");
+  // },
+  // onReachBottom() {
+  //   console.log("加载更多");
+  // }
 })

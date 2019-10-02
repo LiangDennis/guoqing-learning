@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/text/text",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -8,7 +9,7 @@
     "navigationBarBackgroundColor": "#ff5777",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "backgroundColor": "blue"
   },
   "tabBar": {
