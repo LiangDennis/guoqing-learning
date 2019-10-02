@@ -9,3 +9,12 @@
 <view wx:for="{{provider}}" wx:key="index">
   <view>{{index}}--{{item.name}}</view>
 </view>
+<view id="get-user-info">
+  <button id="get-user-info-button" 
+          open-type="getUserInfo"
+          bindgetuserinfo="getInfoMations">
+      获取信息
+  </button>
+  <open-data type="userNickName"></open-data>
+  <open-data type="userAvatarUrl"></open-data>
+</view>

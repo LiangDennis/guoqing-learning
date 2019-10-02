@@ -18,7 +18,7 @@ Page({
     }
   },
   changeCounter(event) {
-    console.log(event);
+    // console.log(event);
     if(event.target.id === "add") {
       this.setData({
         counter:this.data.counter+1
@@ -31,5 +31,8 @@ Page({
     }else {
       console.log("unkown id");
     }
+  },
+  getInfoMations(event) {
+    console.log(event);
   }
 })

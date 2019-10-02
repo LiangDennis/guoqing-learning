@@ -33,6 +33,25 @@ App({
       }
     })
   },
+  onShow: function(options) {
+    // console.log("onShow");
+    // console.log(options);
+    switch(options.scene) {
+      case 1001:
+        console.log("1001场景");
+        break;
+      case 1011:
+        console.log("1011场景");
+        break;
+      default:
+        console.log("其他场景");
+    };
+    // wx.getUserInfo({
+    //   success: (res) => {
+    //     console.log(res);
+    //   }
+    // })
+  },
   globalData: {
     userInfo: null
   }
