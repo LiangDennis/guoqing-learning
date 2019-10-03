@@ -1,0 +1,11 @@
+<!--pages/image/image.wxml-->
+
+<image src="../assets/mm1.jpg"></image>
+<image  
+        src="/pages/assets/mm2.jpg"
+        lazy-load
+        mode="top left"
+        bindload="handleImageLoad"
+        wx:for="{{10}}"
+></image>
+<text>hello</text>
