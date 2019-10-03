@@ -1,0 +1,18 @@
+<!--pages/view/view.wxml-->
+
+<!-- 基本用法 -->
+
+<view class="content" hover-class="content-hover">
+  <!-- hover-start-time 点击后开始点击态的时间 -->
+  <!-- hover-stay-time 松开后点击态保留的时间 -->
+  <!-- hover-stop-propagation 父组件是否不可以捕获到点击态 -->
+  <view 
+    hover-class="test-hover" 
+    class="test"
+    hover-start-time="{{startTime}}"
+    hover-stay-time="{{staytTime}}"
+    hover-stop-propagation="{{isPropagation}}"
+    >
+    hello 你好
+  </view>
+</view>
