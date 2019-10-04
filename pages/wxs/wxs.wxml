@@ -1,0 +1,35 @@
+<!--pages/wxs/wxs.wxml-->
+
+<view>wxs 的两种定义方式</view>
+<wxs module="info">
+  var message = "hello world";
+
+  var userInfo = {
+    name : "Dennis",
+    age: 25
+  };
+
+  var sum = function(value_1,value_2) {
+    return value_1 + value_2;
+  }
+
+  module.exports = {
+    message : message,
+    userInfo : userInfo,
+    sum : sum
+  }
+</wxs>
+
+<view>
+  {{info.message}}
+  <text>\n{{info.userInfo.name}}\n</text>
+  <text>\n{{info.userInfo.age}}\n</text>
+  <text>\n{{info.sum(10,20)}}\n</text>
+</view>
+
+<wxs src="../../wxs/test.wxs" module="test"/>
+
+<!-- indexOf，如果字符串中有某个字符，就输出它的位置，位置是从0开始的。 -->
+<view>{{test.getHello("hello world") >= 0 ? "存在" : "不存在"}}</view>
+<view>{{test.getHello("world hello")}}</view>
+<view>{{test.getHello("some world") >= 0 ? "存在" : "不存在"}}</view>

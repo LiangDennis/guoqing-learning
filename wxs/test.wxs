@@ -1,0 +1,9 @@
+
+
+var getHello = function(str) {
+  return str.indexOf("hello");
+}
+
+module.exports = {
+  getHello : getHello
+}
