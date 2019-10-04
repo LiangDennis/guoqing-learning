@@ -1,0 +1,28 @@
+/* pages/scrollView/scrollView.wxss */
+
+.scroll-view-class {
+  background-color: #999;
+  white-space: nowrap;
+}
+
+.scroll-view-item {
+  display: inline-block;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #ace;
+  margin: 10px;
+}
+
+.scroll-view-class-other {
+  margin-top: 20px;
+  background-color: #ace;
+  height: 400rpx;
+}
+
+.scroll-view-item-other {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: #999;
+  margin: 10px;
+}

@@ -1,0 +1,19 @@
+<!--pages/scrollView/scrollView.wxml-->
+<scroll-view class="scroll-view-class" scroll-x>
+  <view 
+        class="scroll-view-item" 
+        wx:for="{{10}}" 
+        wx:key="index">{{item+1}}</view>
+</scroll-view>
+
+
+<scroll-view class="scroll-view-class-other" scroll-y>
+  <view 
+        class="scroll-view-item-other"
+        wx:for="{{10}}"
+        wx:key="index"
+        >
+        <text space="emsp">index: {{index}}\n</text>
+        <text space="emsp">item: {{item+1}}\n</text>
+        </view>
+</scroll-view>
