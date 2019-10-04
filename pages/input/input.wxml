@@ -1,0 +1,13 @@
+<!--pages/input/input.wxml-->
+
+<input 
+        value="" 
+        placeholder="请输入文字"
+        placeholder-class="holder-class-input"
+        maxlength="11"
+        type="text"
+        password
+        disabled="{{isDisabled}}"
+        focus
+        confirm-type="send"
+        ></input>

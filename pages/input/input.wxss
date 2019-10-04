@@ -1,0 +1,9 @@
+/* pages/input/input.wxss */
+
+input {
+  border: 1px solid #ace;
+  margin: 10px 30px;
+}
+.holder-class-input {
+  color: red;
+}
