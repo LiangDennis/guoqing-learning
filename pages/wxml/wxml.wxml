@@ -1,0 +1,37 @@
+<!--pages/wxml/wxml.wxml-->
+<view style="text-align:center">{{score > 70 ? "hello" : "world"}}</view>
+
+<view style="text-align:center">{{score > 70 ? youxiu : jige}}</view>
+<view style="text-align:center">{{score +10}}</view>
+
+<view>---------------</view>
+<view class="center">
+  <view>分数：{{score}}</view>
+  <view wx:if="{{score >= 90}}">优秀</view>
+  <view wx:elif="{{score >= 80}}">良好</view>
+  <view wx:elif="{{score >= 60}}">及格</view>
+  <view wx:elif="{{score < 60}}">不及格</view>
+  <button bindtap="addSeven">加7分</button>
+  <button bindtap="subSeven">减7分</button>
+</view>
+
+
+<view>
+  <block 
+          wx:for="{{provinces}}"
+          wx:for-item="province"
+          wx:key="index">
+          <!-- index不可用，因为已经使用i代替 -->
+          <!-- 1.当只使用wx:key绑定索引值时，无论是什么，或者没有给值，也会是index起到索引作用。 -->
+          <!-- 2.只有当使用wx:for-index后才会改变index作为索引的方式。 -->
+    <view class="center">编号：{{index}}--{{i}}，省份：{{province}}</view>
+  </block>
+</view>
+
+<!-- template -->
+<template name="contentItem">
+  <button bindtap="testBindTap">{{btnText}}</button>
+  <view>{{title}}</view>
+</template>
+
+<template is="contentItem" data="{{btnText:'点击',title:'内容是这里'}}"></template>

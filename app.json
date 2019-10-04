@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/wxml/wxml",
     "pages/scrollView/scrollView",
     "pages/input/input",
     "pages/image/image",
