@@ -1,0 +1,21 @@
+<!--pages/event/event.wxml-->
+<view
+      class="event-view"
+      bind:touchstart="handleStart"
+      bind:touchend="handleEnd"
+      bind:touchmove="handleMove"
+      bind:longpress="handleLongPress"
+      bind:tap="handleTap"
+></view>
+
+<view id="outer" bindtap="getNewTitle" capture-bind:tap="testCapture">
+  <block>
+    <view id="inner" 
+          wx:for="{{titles}}" wx:key="{{index}}"
+          bindtap="getTitle"
+          data-newTitle="{{item}}"
+          data-indexOfTitle="{{index}}">
+      {{item}}
+    </view>
+  </block>
+</view>
