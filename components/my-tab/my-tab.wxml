@@ -1,0 +1,12 @@
+<!--components/my-tab/my-tab.wxml-->
+<view class="tab-control">
+  <block wx:for="{{tabList}}" wx:key="{{index}}">
+    <view class="tab-item {{isAcitve === index ? 'active' : ''}}"
+          bind:tap="sendData"
+          data-index="{{index}}"
+          data-item="{{item}}"
+    >
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>

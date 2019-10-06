@@ -7,6 +7,10 @@ Page({
   data: {
     wantTitle:"hello world",
     count:11,
+    list:["流行","古典","民谣"]
+  },
+  handleData(event) {
+    console.log(event);
   },
   changeTitle() {
     this.setData({

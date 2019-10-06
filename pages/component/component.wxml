@@ -5,3 +5,5 @@
 <button bindtap="changeTitle">改变title值</button>
 
 <view>这是页面中的count值：{{count}}</view>
+
+<my-tab tabList="{{list}}" bind:sendData="handleData"/>
