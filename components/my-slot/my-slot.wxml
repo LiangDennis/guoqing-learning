@@ -1,0 +1,4 @@
+<!--components/my-slot/my-slot.wxml-->
+<view class="header">头部信息</view>
+<slot>我是默认的slot 信息</slot>
+<view class="footer">底部信息</view>

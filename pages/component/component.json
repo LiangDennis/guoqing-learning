@@ -2,6 +2,8 @@
   "usingComponents": {
     "my-header":"/components/my-header/my-header",
     "my-tab":"/components/my-tab/my-tab",
-    "my-sel":"/components/my-sel/my-sel"
+    "my-sel":"/components/my-sel/my-sel",
+    "my-slot":"/components/my-slot/my-slot",
+    "my-mslot":"/components/my-mslot/my-mslot"
   }
 }

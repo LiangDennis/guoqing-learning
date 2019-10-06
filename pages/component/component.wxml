@@ -11,3 +11,15 @@
 <view>---------------通过this.selectComponent(class/id)获取组件对象（推荐使用id，因为id的唯一性）</view>
 <my-sel id="my-sel-id"/>
 <button bind:tap="changeComponents">修改组件中的数据</button>
+
+<view>------------------------------------</view>
+<my-slot>
+  <button>我是slot 插槽的按钮</button>
+</my-slot>
+
+<view>--------------------------------------------------------------</view>
+<my-mslot>
+  <button slot="slot-second">我是第二个插槽</button>
+  <slider slot="slot-third" value="70"></slider>
+  <text slot="slot-first">我是第一个插槽</text>
+</my-mslot>
