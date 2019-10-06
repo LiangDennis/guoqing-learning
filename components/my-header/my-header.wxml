@@ -1,0 +1,8 @@
+<!--components/my-header/my-header.wxml-->
+<view class="title">{{title}}</view>
+<view class="sub-title">{{title}}</view>
+<view>{{trueTitle}}</view>
+<view class="count-box">
+  <view>这是组件中的count值：{{count}}</view>
+  <button bindtap="addCount">增加count值</button>
+</view>

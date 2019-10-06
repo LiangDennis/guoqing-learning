@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/component/component",
     "pages/event/event",
     "pages/wxs/wxs",
     "pages/wxml/wxml",

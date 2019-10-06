@@ -1,0 +1,7 @@
+<!--pages/component/component.wxml-->
+<view style="text-align:center;">自定义组件</view>
+
+<my-header trueTitle="{{wantTitle}}" bind:increment="handleIncrement"></my-header>
+<button bindtap="changeTitle">改变title值</button>
+
+<view>这是页面中的count值：{{count}}</view>
