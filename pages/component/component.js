@@ -9,6 +9,12 @@ Page({
     count:11,
     list:["流行","古典","民谣"]
   },
+  changeComponents() {
+    // console.log(this);
+    let mySel = this.selectComponent("#my-sel-id");
+    // console.log(mySel);
+    mySel.incrementCounter(100);
+  },
   handleData(event) {
     console.log(event);
   },

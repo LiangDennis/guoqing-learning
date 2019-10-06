@@ -7,3 +7,7 @@
 <view>这是页面中的count值：{{count}}</view>
 
 <my-tab tabList="{{list}}" bind:sendData="handleData"/>
+
+<view>---------------通过this.selectComponent(class/id)获取组件对象（推荐使用id，因为id的唯一性）</view>
+<my-sel id="my-sel-id"/>
+<button bind:tap="changeComponents">修改组件中的数据</button>
