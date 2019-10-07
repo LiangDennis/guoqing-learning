@@ -1,0 +1,3 @@
+<!--components/my-component-test/my-component-test.wxml-->
+<view>{{message}}</view>
+<button bindtap="handleChangeMessage">内部改变message</button>

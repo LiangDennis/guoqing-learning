@@ -7,7 +7,19 @@ Page({
   data: {
     wantTitle:"hello world",
     count:11,
-    list:["流行","古典","民谣"]
+    list:["流行","古典","民谣"],
+    msg:"广东省",
+    isShow:true
+  },
+  isClose() {
+    this.setData({
+      isShow : !this.data.isShow
+    });
+  },
+  handleChangeMessage() {
+    this.setData({
+      msg: this.data.msg === "广东省" ? "中国" : "广东省"
+    })
   },
   changeComponents() {
     // console.log(this);

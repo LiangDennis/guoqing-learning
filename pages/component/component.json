@@ -4,6 +4,7 @@
     "my-tab":"/components/my-tab/my-tab",
     "my-sel":"/components/my-sel/my-sel",
     "my-slot":"/components/my-slot/my-slot",
-    "my-mslot":"/components/my-mslot/my-mslot"
+    "my-mslot":"/components/my-mslot/my-mslot",
+    "my-cpn-test":"/components/my-component-test/my-component-test"
   }
 }
