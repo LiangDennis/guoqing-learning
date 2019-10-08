@@ -12,7 +12,8 @@
     "pages/text/text",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/request/request"
+    "pages/request/request",
+    "pages/toast/toast"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,15 @@
+<!--pages/toast/toast.wxml-->
+
+    <!-- 1 -->
+    <button bindtap="handleshowToast">showToast</button>
+
+    <!-- 2 -->
+    <button bindtap="handleshowModal">showModal</button>
+
+    <!-- 3 -->
+    <button bindtap="handleshowLoading">showLoading</button>
+
+    <!-- 4 -->
+    <button bindtap="handleshowActionSheet">showActionSheet</button>
+
+
