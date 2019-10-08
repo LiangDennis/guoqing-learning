@@ -11,7 +11,8 @@
     "pages/button/button",
     "pages/text/text",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/request/request"
   ],
   "window": {
     "backgroundTextStyle": "light",
