@@ -5,12 +5,16 @@ Page({
       title: 'hello world',
       // icon: 'loading',
 
-      duration: 2000,
+      duration: 10000,
       mask:true,
       success:(res)=> {
         console.log(res);
       },
     });
+
+    setTimeout(()=>{
+      wx.hideToast();
+    },5000)
   },
   handleshowModal() {
     wx.showModal({

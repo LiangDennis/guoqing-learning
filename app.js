@@ -1,14 +1,59 @@
 //app.js
+import request from '/utils/request.js'
 App({
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
+    // const serverUrl = "http://123.207.32.32:3000"
     wx.login({
       success: res => {
+        console.log(res);
+        const code = res.code;
+        request({
+          url: "/login",
+          method:'post',
+          // data:{
+          //   code
+          // }
+        }).then(res=> {
+          console.log(res);
+          return request({
+            url:'/auth',
+            method:'post',
+            header:{
+              token:res.data.token
+            },
+            // data:{
+            //   code:res.code
+            // }
+          })
+        }).then(res=>{
+          console.log(res);
+        })
+        // wx.request({
+        //   url: 'http://123.207.32.32:3000/login',
+        //   method:'post',
+        //   data:{
+        //     code: code
+        //   },
+        //   success: (res) => {
+        //     const token = res.data.token;
+        //     console.log(res.data.token);
+        //     wx.request({
+        //       url: 'http://123.207.32.32:3000/auth',
+        //       method: 'post',
+        //       header:{
+        //         token: token
+        //       },
+        //       success: res=> {
+        //         console.log(res);
+        //       }
+        //     })
+        //   }
+        // })
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
